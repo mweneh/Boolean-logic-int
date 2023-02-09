@@ -16,4 +16,5 @@ class BooleanExpression
     expression.gsub!("AND", "&&")
     expression.gsub!("OR", "||")
     eval(expression)
+  end
 end
