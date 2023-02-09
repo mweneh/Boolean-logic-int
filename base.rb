@@ -1,0 +1,3 @@
+class BooleanExpression
+  VARIABLES = {}
+end
