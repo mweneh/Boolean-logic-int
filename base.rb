@@ -6,6 +6,7 @@ class BooleanExpression
   end
 
   def evaluate
+    # duplicate expression via.dup
     expression = @expression.dup
     expression.gsub!(/([a-z]+)/) do |match|
       VARIABLES[match] || match
