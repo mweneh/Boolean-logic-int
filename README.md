@@ -14,8 +14,8 @@ puts expression.evaluate
 # Output: T
 
 You can also evaluate expressions that contain variables:
-# Note: expressions with varaibles such as the ones below are not yet working in this code.
-If you have a solution feel free to add it.
+# Note: expressions with variables such as the ones below are not yet working in this code.
+# If you have a solution feel free to add it.
 
 
 expression = BooleanExpression.new("let X = F")
