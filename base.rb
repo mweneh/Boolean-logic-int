@@ -18,3 +18,29 @@ class BooleanExpression
     eval(expression)
   end
 end
+
+
+# examples
+expression = BooleanExpression.new("T OR F")
+ puts expression.evaluate
+ # Output: T
+ 
+ expression = BooleanExpression.new("T AND F")
+ puts expression.evaluate
+ # Output: F
+ 
+ expression = BooleanExpression.new("(T AND F) == F")
+ puts expression.evaluate
+ # Output: T
+ 
+#  expression = BooleanExpression.new(" let X = F")
+#  puts expression.evaluate
+ # Output: NoMethodError
+ 
+#  expression = BooleanExpression.new("let Y = NOT X")
+#  puts expression.evaluate
+ # Output: undefined method 'let'
+ 
+ expression = BooleanExpression.new(" ! F AND T")
+ puts expression.evaluate
+ # Output: T
