@@ -14,17 +14,16 @@ puts expression.evaluate
 # Output: T
 
 You can also evaluate expressions that contain variables:
-Note: expressions with varaibles such as the ones below are not yet working in this code.
+# Note: expressions with varaibles such as the ones below are not yet working in this code.
 If you have a solution feel free to add it.
 
 
 expression = BooleanExpression.new("let X = F")
 puts expression.evaluate
-# Output: X: F
+
 
 expression = BooleanExpression.new("let Y = NOT X")
 puts expression.evaluate
-# Output: Y: T
 
 Syntax
 
